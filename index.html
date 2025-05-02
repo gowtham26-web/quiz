@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Simple Quiz</h2>
+
+    <form id="quizForm">
+      <div class="question">
+        <p>1. What does HTML stand for?</p>
+        <label><input type="radio" name="q1" value="HyperText Markup Language"> HyperText Markup Language</label>
+        <label><input type="radio" name="q1" value="HighText Machine Language"> HighText Machine Language</label>
+        <label><input type="radio" name="q1" value="HyperTool Multi Language"> HyperTool Multi Language</label>
+      </div>
+
+      <div class="question">
+        <p>2. Which CSS property is used to change text color?</p>
+        <label><input type="radio" name="q2" value="text-color"> text-color</label>
+        <label><input type="radio" name="q2" value="color"> color</label>
+        <label><input type="radio" name="q2" value="font-color"> font-color</label>
+      </div>
+
+      <div class="question">
+        <p>3. What is the correct syntax to link a JavaScript file in HTML?</p>
+        <label><input type="radio" name="q3" value="&lt;script src='script.js'&gt;&lt;/script&gt;"> &lt;script src="script.js"&gt;&lt;/script&gt;</label>
+        <label><input type="radio" name="q3" value="&lt;js href='script.js'&gt;"> &lt;js href="script.js"&gt;</label>
+        <label><input type="radio" name="q3" value="&lt;link rel='js' href='script.js'&gt;"> &lt;link rel="js" href="script.js"&gt;</label>
+      </div>
+
+      <div class="question">
+        <p>4. Which method is used to add an element to the end of an array in JavaScript?</p>
+        <label><input type="radio" name="q4" value="append()"> append()</label>
+        <label><input type="radio" name="q4" value="push()"> push()</label>
+        <label><input type="radio" name="q4" value="add()"> add()</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="result" class="result-box" style="display: none;">
+      <h2>Web Development Quiz</h2>
+      <p>Your Quiz Result</p>
+      <p>Score: <span id="score"></span> / 4</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
